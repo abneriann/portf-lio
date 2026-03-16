@@ -314,3 +314,12 @@ h1 {
 }
 
 }
+
+@media (max-width:768px){
+
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+}
+
+}
