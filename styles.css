@@ -300,3 +300,17 @@ h1 {
 .social-icons a:hover {
     color: var(--principal)
 }
+
+@media (max-width: 768px){
+
+.menu{
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.social-icons{
+    position: static;
+    margin-left: 10px;
+}
+
+}
