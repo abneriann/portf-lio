@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Abner Alencar | Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navbar">
+        <ul class="menu">
+            <div class="social-icons">
+  <a href="https://www.linkedin.com/in/abner-ian-a22baa289/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+
+  <a href="https://github.com/abneriann" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <a href="mailto:abnerian.alencar@gmail.com">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+</div>
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="inicio" class="cabeça">
+        <img src="./img/outra.png" alt="Abner Alencar" class="foto-perfil">
+        <h1>Abner Alencar</h1>
+        <p class="superp">Estudante de Desenvolvimento Web</p>
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá, eu sou Abner Alencar 👋
+
+                Sou um Desenvolvedor Front-End em desenvolvimento, focado em criar interfaces modernas, funcionais e bem
+                estruturadas. Tenho dedicado meu tempo ao estudo de programação e à construção de projetos práticos para
+                evoluir minhas habilidades e transformar ideias em aplicações reais.
+
+                Atualmente estou desenvolvendo projetos para meu portfólio, buscando aplicar boas práticas de código,
+                organização e desenvolvimento web. Meu objetivo é conquistar minha primeira oportunidade na área de
+                tecnologia, onde eu possa continuar aprendendo, contribuir com projetos reais e evoluir como
+                desenvolvedor.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="./img/projetor1m.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos">
+                    <h3 class="info-projetos">Loja de Roupas</h3>
+                    <p class="paragrafo-projetos">Projeto de loja de roupas desenvolvido em HTML, CSS e Uso de Agente de
+                        Atendimento Online</p>
+                        <p class="tecnologia">Tecnologias: HTML • CSS • Git • GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Whatsapp</button>
+        </form>
+        <script>
+            function enviarWhats(event) {
+                event.preventDefault()
+                const nome = document.getElementById('nome').value;
+                const mensagem = document.getElementById('mensagem').value;
+                const telefone = '5511946797644'
+
+                const texto = `Olá! Me chamo ${nome}, ${mensagem}`
+                const msgFormatada = encodeURIComponent(texto)
+
+                const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
+
+                console.log(url)
+
+                window.open(url, '_blank')
+            }
+
+        </script>
+    </section>
+</body>
+
+</html>
