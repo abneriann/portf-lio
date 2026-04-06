@@ -149,7 +149,8 @@ h1 {
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 600px;
+    max-width: 1200px;
+    gap: 2rem;
     margin: 0 auto;
 }
 
