@@ -375,3 +375,122 @@ h1 {
         margin: 0;
     }
 }
+
+.tecnicas {
+    padding: 6rem 2rem;
+}
+
+.tecnicas-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tecnicas-caixa {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--branco);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.tecnicas-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+.soft {
+    padding: 6rem 2rem;
+}
+
+.soft-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.soft-caixa {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--branco);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.soft-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.plano {
+    padding: 6rem 2rem;
+}
+
+.plano-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.plano-caixa {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--branco);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.plano-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.Considerações {
+    padding: 6rem 2rem;
+}
+
+.Considerações-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Considerações-caixa {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--branco);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.Considerações-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.link-projetos {
+    text-decoration: none;
+    color: var(--branco);
+}
