@@ -324,3 +324,54 @@ h1 {
 }
 
 }
+
+.botao-curriculo {
+    margin-top: 20px;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(45deg, var(--principal), var(--secundaria));
+    color: var(--branco);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.botao-curriculo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(105, 21, 189, 1);
+}
+
+.hamburguer {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .social-icons {
+        position: static;
+        margin: 0;
+    }
+}

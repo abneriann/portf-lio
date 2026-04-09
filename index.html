@@ -12,30 +12,34 @@
 <body>
     <div class="particulas"></div>
     <nav class="navbar">
-        <ul class="menu">
-            <div class="social-icons">
-  <a href="https://www.linkedin.com/in/abner-ian-a22baa289/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-
-  <a href="https://github.com/abneriann" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a href="mailto:abnerian.alencar@gmail.com">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
-</div>
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contato" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
+    <button class="hamburguer" id="hamburguer">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="menu" id="menu">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/abner-ian-a22baa289/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/abneriann" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:abnerian.alencar@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contato" class="menu-link">Contato</a></li>
+    </ul>
+</nav>
     <main id="inicio" class="cabeça">
         <img src="./img/outra.png" alt="Abner Alencar" class="foto-perfil">
         <h1>Abner Alencar</h1>
         <p class="superp">Estudante de Desenvolvimento Web</p>
+        <a href="./curriculo.pdf" download class="botao-curriculo">
+    <i class="fa-solid fa-download"></i> Baixar Currículo
+</a>
     </main>
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre</h2>
@@ -105,6 +109,7 @@
             }
 
         </script>
+        <script src="./scripts.js"></script>
     </section>
 </body>
 
